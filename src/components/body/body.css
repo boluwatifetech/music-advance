@@ -1,0 +1,111 @@
+.songrow{
+   
+margin-bottom:20px;
+transition:all 1s ease;
+cursor:pointer;
+
+padding:25px 40px;
+border-radius:7px;
+box-shadow:3px 5px 6px 7px rgb(77, 72, 72);
+overflow:hidden;
+transition:all 1s ease;
+position:relative;
+
+}
+.songrow::before{
+    content:'';
+    height:100%;
+    width:100%;
+    color:black;
+}
+.songrow .fa-play{
+  background:black;
+  padding:10px 20px;
+  border-radius:7px;
+  color:white;
+  text-transform:capitalize;
+  font-family:Georgia, 'Times New Roman', Times, serif;
+  
+  position:absolute;
+    top:-20%;
+}
+.songrow:hover .fa-play{
+    top:50%;
+    left:50%;
+}
+
+.songrow-img{
+    max-height:100%;
+    max-width:100%;
+    text-align:center;
+    margin-bottom:9px;
+}
+.songrow-img img{
+    height:190px;
+    border-radius:7px;
+    width:250px;
+
+    margin-right:10px;
+}
+.songrow:hover{
+   transform:scale(0.92);
+   background:rgb(39, 36, 36);
+    }
+.songrow-container h1{
+    font-size:18px;
+    font-weight:700;
+    font-family:Georgia, 'Times New Roman', Times, serif;
+text-transform:capitalize;
+margin-bottom:4px;
+margin-bottom:6px;
+text-align:center;
+}
+.songrow-container p{
+    font-weight:400;
+    text-align:center;
+    font-size:14px;
+    font-family:Arial, Helvetica, sans-serif;
+    text-transform:capitalize;
+}
+.main-musicarea{
+display:grid;
+grid-template-columns: 1fr 1fr 1fr;
+place-items:center;
+justify-items:center;
+align-items:center;
+gap:20px;
+}
+
+/* design for body section*/
+.cover-body{
+    display:flex;
+margin-bottom:35px;
+margin:40px 10px;
+}
+.img-body img{
+height:200px;
+width:350px;
+border-radius:15px;
+margin-right:30px;
+}
+.coverall-bodysection{
+    padding:30px;
+}
+.content-body h2{
+    font-weight:300;
+}
+
+
+
+@media(max-width:1000px){
+    .main-musicarea{
+        grid-template-columns:1fr 1fr;
+    }
+}
+
+@media(max-width:750px){
+    .main-musicarea{
+        grid-template-columns: 1fr;
+    }
+}
+

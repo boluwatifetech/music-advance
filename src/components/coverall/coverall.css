@@ -1,0 +1,79 @@
+.coverall-app{
+    display:flex;
+    
+}
+.feed-cover{
+    flex:0.9;
+   
+    overflow-y:overlay;
+    height:100vh;
+}
+.feed-cover::-webkit-scrollbar{
+    display:none;
+}
+
+.sidebar-coverall{
+    background:rgb(99, 97, 97);
+    flex:0.1;
+    min-width:230px;
+padding:10px;
+    color:white;
+  height:100vh;
+  transition:all 1s ease;
+  visibility:visible;
+}
+.container-allapp button{
+    display:none;
+}
+.container-allapp .fa-allapp .times{
+    border:none;
+outline:none;
+font-size:20px;
+padding:10px;
+margin:10px;
+cursor:pointer;
+transition:all 1s ease;
+}
+.container-allapp .fa-allapp .times:hover{
+    background:transparent;
+    color:cornflowerblue;
+    transform:scale(0.97)
+}
+.container-allapp .fa-allapp .bars{
+border:none;
+outline:none;
+font-size:20px;
+padding:10px;
+margin:10px;
+cursor:pointer;
+transition:all 1s ease;
+}
+.container-allapp .fa-allapp .bars:hover{
+    background:transparent;
+    color:white;
+    transform:scale(0.97)
+}
+
+.footer-cover{
+    position:fixed;
+    bottom:0;
+    width:100%;
+    background-color:cornflowerblue;
+  
+}
+.fa-allapp{
+    font-size:20px;
+}
+@media(max-width:750px){
+    .container-allapp button{
+        display:block;
+    }
+    .sidebar-coverall.hide{
+        min-width:-230px;
+        height:0px;
+        
+    visibility:hidden;
+    
+    }
+    
+}

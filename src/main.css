@@ -1,0 +1,17 @@
+*{
+    margin:0;
+padding:0;
+}
+body::-webkit-scrollbar{
+    display:none;
+}
+
+    body{
+-webkit-font-smoothing:antialiased;
+-moz-osx-font-smoothing:greyscale;
+       overflow-x:hidden;
+   background:linear-gradient(rgba(17, 15, 15, 0.8),rgba(15, 15, 15, 0.8));
+color:white;
+}
+
+
